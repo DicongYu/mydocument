@@ -1,0 +1,53 @@
+查看那些文件被修改，被跟踪
+git status 
+
+添加所有文件
+git add.
+
+添加某个文件
+git add test.txt
+
+只添加被修改或删除的文件，不添加新文件
+git add -u 
+
+写commit信息
+git commit -m "你的commit说明"
+
+只设置了默认远端为origin，默认分支为main或master
+git push
+
+第一次推送新分支
+git push -u orgin main
+以后直接
+git push
+
+
+
+检查是否有SSH key
+ls ~/.ssh
+
+生成新的SSH Key
+ssh-keygen -t ed25519 -C "你的github邮箱"
+然后回车 回车 回车
+
+启动SSH agent 
+eval "$(ssh-agent -s)"
+添加私钥
+ssh-add ~/.ssh/id_ed25519
+
+复制公钥
+cat ~/.ssh/id_ed25519.pub
+
+添加到github 
+gitHub -> Setting -> SSH and GPG keys -> New SSH key
+
+
+测试是否成功连接
+ssh -T git@github.com
+
+查看仓库绑定
+gei remote -v 
+远程仓库默认名字：origin
+
+改到要上传的仓库名
+git remote set-url origin git@github.com:DicongYu/mydocument.git 
