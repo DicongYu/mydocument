@@ -1,3 +1,145 @@
 {
+    "debug.onTaskErrors": "debugAnyway",
+    "cmake.environment": {
+        "PATH": "c:/Users/98989/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.42.2/resources/cube-cmake/win32;c:\\Users\\98989\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.0.3\\resources\\binaries\\win32\\x86_64;${env.PATH}"
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-3.1",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "chat.agent.enabled": false,
+    "github.copilot.chat.agent.currentEditorContext.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "terminal.explorerKind": "external",
+    "terminal.external.windowsExec": "wt.exe", 
 
+  // VSCodeVim 开启
+  "vim.enableNeovim": false,
+  "vim.useSystemClipboard": true,
+  "vim.leader": " ",
+
+  // 移动分屏（Hotz / tmux 风格）
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // 分屏
+    {
+      "before": [" ", "v"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": [" ", "s"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+
+    // 保存 / 关闭
+    {
+      "before": [" ", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": [" ", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": [" ", "x"],
+      "commands": ["workbench.action.files.save"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // FZF 替代（Hotz-style）
+    {
+      "before": [" ", "p"],
+      "commands": ["workbench.action.quickOpen"]   // 类似 :Files
+    },
+    {
+      "before": [" ", "g"],
+      "commands": ["workbench.action.findInFiles"] // 类似 :Rg
+    }
+  ],
+
+  // 禁止方向键（高手习惯）
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<up>"],
+      "commands": ["notifications.showList"] // 或者任何无伤命令
+    },
+    {
+      "before": ["<down>"],
+      "commands": ["notifications.showList"]
+    },
+    {
+      "before": ["<left>"],
+      "commands": ["notifications.showList"]
+    },
+    {
+      "before": ["<right>"],
+      "commands": ["notifications.showList"]
+    }
+  ],
+
+  // VSCode 本身的一些 Hotz-style 简洁设定
+  "editor.lineNumbers": "relative",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "none",
+"editor.wordWrap": "off",
+"terminal.integrated.defaultProfile.windows": "PowerShell"
 }
+//按键i是向前一个字符并且选择插入模式,按键a -> 选择插入模式，esc是退出插入模式
+//j-> 光标下一行, k -> 向上一行， h,l -> 行内左右移动
+//0 -> 跳到行首， $ -> 跳到行尾
+//w-> 跳到下一个词 ，b->跳到上一个词， gg->跳到文件顶部， G-> 跳到文件底部
+//" " + V -> 垂直分屏， " "+ s -> 分屏向下
+//ctrl+l -> 到右分屏， ctrl+h 到左屏 ctrl + j 到下屏 ， ctrl+ k 到上屏
+//检测是否有按键冲突： 查看keyboard Shortcut是否有重复绑定
+
+//保存， 关闭/ 保存并关闭 ：" "+ w -> testing save and close 
+
+//" " + q : 关闭当前活动编辑器 
+
+//" " + x : 一次保存并关闭
+
+//" " + p : 然后输入文件名，打开文件
+
+//" " + g : 打开搜索框
+
+// y键 ： 复制
+
+// d ： 删除
+
+// x : 剪切
+
+// p : 粘贴
+
+// < : 左缩进
+
+// < : 右缩进
+
+// gU : 转大写
+
+// gu : 转小写
+
+// 冒号： 对选中的范围执行命令
+
