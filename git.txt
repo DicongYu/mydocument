@@ -2,7 +2,7 @@
 git status 
 
 添加所有文件
-git add.
+git add XXX
 
 添加某个文件
 git add test.txt
@@ -21,6 +21,9 @@ git push -u orgin main
 以后直接
 git push
 
+配置用户信息
+git config --global user.name "你的名字"
+git config --global user.email "你的GitHub邮箱"
 
 
 检查是否有SSH key

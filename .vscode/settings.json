@@ -17,7 +17,7 @@
         "scminput": false
     },
     "terminal.explorerKind": "external",
-    "terminal.external.windowsExec": "wt.exe", 
+    "terminal.external.windowsExec":  "C:\\WINDOWS\\System32\\wsl.exe",
 
   // VSCodeVim 开启
   "vim.enableNeovim": false,
